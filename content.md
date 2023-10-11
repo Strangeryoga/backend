@@ -64,3 +64,54 @@ Only one issue we get when we use middleware the request get jam and we didn't r
 for solving that issue we use next()
 
 
+app.use(function(req, res, next){
+    console.log("hello from middleware");
+    next();
+});
+
+
+Because of HTTP we are able to make a server
+
+//node vs express
+node is the main thing. With the help of express code we write server code and how the server will react this also we write with the help of express.
+if express is not their we can write code in node but it will be lengthy. We write code in express so that our life gets easier. Behind the scene express uses
+node code only. That means if node is not their express will also not their but if node is their and express is not their then it's ok. Take an example of default 
+browser on the phone. We rarely used that browser but we are able to use different browser which is suitable for us.
+
+//what is express js
+It is a package and mainly used for routing
+
+//why express js
+http is difficult to use, express makes this easier
+
+//routing
+the process of making routes is called routing
+/profile
+/home
+
+//middleware
+
+app.use(function(req, res, next){
+    res.send("hello from middleware");
+    next();
+});
+
+
+//req
+the data of the user who is sending the request
+req contains all the data coming from the user who is sending the request just like location, device info and other things
+//res
+server is sending the response to the user
+res contains controls on that basis server sends the response
+//next
+next is just a push so that our request moves to the next thing which should be executed
+
+
+//dynamic routing
+That route whose some part is always same and some part always change
+
+//route parameters
+
+
+
+
