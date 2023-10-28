@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+
+body {
+    background-color: black;
+    font-family: Rajdhani, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0 0 20px;
+    margin-bottom: 90px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    background-color: transparent;
+    font-family: Rajdhani,sans-serif;
+    text-align: left;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    margin-bottom: 70px;
+    outline: none;
+}
+
+
+input[type=password] {
+    background-color: transparent;
+    font-family: Rajdhani,sans-serif;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    margin-bottom: 70px;
+    display: block; 
+    outline: none;
+}
+
+/* Here is the class that controls the clips */
+.input_ui[data-augmented-ui]{
+    --aug-border-all: 2px;
+    --aug-border-bg: #9c3230;
+    --aug-bl: 1.5rem;
+    --aug-tr: 1.5rem;
+}
+
+button[data-augmented-ui] {
+    text-align: left;
+    font-family: Rajdhani,sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    --aug-border-top: 1px;
+    --aug-border-bottom: 1px;
+    --aug-border-right: 1px;
+    --aug-border-left: 7px;
+    --aug-border-bg: #9c3230;
+    --aug-br: 0.7rem;
+}
+
+button:hover {
+    background-color: #555;
+}

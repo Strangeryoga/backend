@@ -161,5 +161,11 @@ To setup images, stylesheets, frontend js
 
 -> understand the path
 
+//error handling
+https://expressjs.com/en/guide/error-handling.html
+
+put error function inside
+app.use()
+
 
 
