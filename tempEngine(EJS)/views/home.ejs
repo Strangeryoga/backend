@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#666, #222);
+}
+
+.ad-container {
+  width: 300px;
+  border: 1px solid white;
+}
+
+.ad-link {
+  display: block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.ad-image {
+  width: 300px;
+  height: 300px;
+  background: url("https://images.unsplash.com/photo-1692071097980-2d78ced0cf75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80");
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: -30px;
+  transform: scale(1);
+  transition: background-position 0.25s;
+  &.no-more-slidey {
+    transition: none;
+  }
+}
+
+.ad-content {
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <div class="ad-link">
+          <a href="#">
+            <div class="ad-image"></div>
+          </a>
+        </div>
+        <div class="ad-content">
+          <p>This ad is so cool!</p>
+          <p>Made by <%= name%></p>
+        </div>
+      </div>
+
+      <script>
+        let linkContainer = document.querySelector(".ad-image");
+
+let hoverScale = (e) => {
+  linkContainer.style.backgroundPostionX = -e.offsetX * 2 + "px";
+  linkContainer.style.backgroundPositionY = -e.offsetY * 2.5 + "px";
+};
+
+let offScale = (e) => {
+  linkContainer.style.backgroundPosition = "0px 0px";
+};
+
+linkContainer.addEventListener("mousemove", hoverScale);
+
+      </script>
+    
+</body>
+</html>

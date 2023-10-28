@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fortenox</title>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+/*
+WEBSITE DESIGNED BY DEWAN MUKTO
+https://dribbble.com/shots/22817511-Musical-Website-UI-Concept-Fortenox
+WEBSITE DEVELOPED BY DEWAN MUKTO
+https://blog.wev.ovh/
+MADE FOR FORTENOX
+https://youtube.com/@Fortenox
+*/
+
+body {
+  background-color: #02008D;
+  background-image: linear-gradient(180deg, #000000 0%, #02008D 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  font-family: 'Anonymous Pro', monospace;
+  overflow: show;
+}
+
+
+
+.socialdecor{
+  z-index: 1;
+  overflow: auto;
+  position: absolute;
+  top: 80px;
+  left: -255px;
+  scale: 0.3;
+}
+.socialdecor:hover{
+  opacity: 0.8;
+}
+.socialdecor:active{
+  scale: 0.8;
+  transition: 0.3s;
+}
+.cornerdecor{
+  z-index: 2;
+  overflow: auto;
+  position: absolute;
+  top: -20px;
+  left: 1115px;
+  scale: 0.7;
+}
+.gallery{
+  z-index: -1;
+  overflow: auto;
+  position: absolute;
+  top: 90px;
+  left: 615px;
+  scale: 1.6;
+}
+
+
+.topsec{
+  z-index: 1;
+  border-radius: 36px;
+  padding: 2.7rem;
+  margin: 1.5rem;
+  /* background-image: linear-gradient(180deg, #ACBEFF 0%, #00DFE6 100%); */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+  color: #ffffff;
+}
+.topsec:hover{
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: 0.5s;
+}
+.topsectxt{
+  z-index: inherit;
+  color:#ffffff;
+  z-index: 9;
+  width: 25%;
+}
+.socials{
+  z-index: 1;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  padding: 0.1rem;
+  width: 25%;
+}
+.socials:hover, .fa-brands:hover{
+  opacity: 0.8;
+}
+.socials:active, .fa-brands:active{
+  scale: 0.8;
+  transition: 0.3s;
+}
+
+
+
+.row {
+  z-index: inherit;
+  display: grid;
+}
+.row:after {
+  z-index: inherit;
+  content: "";
+  display: table;
+  clear: both;
+}
+.column-50 {
+  z-index: inherit;
+  flex:50%;
+}
+.column-25 {
+  z-index: inherit;
+  width: 25%;
+}
+.column-75 {
+  z-index: inherit;
+  width: 75%;
+  float:center;
+}
+
+
+
+.featureimg{
+  z-index: 2;
+  overflow: auto;
+  position: absolute;
+  top: 290px;
+  left: 640px;
+  scale: 1.2;
+}
+
+
+
+.navsec{
+  z-index: 3;
+  border-radius: 27px;
+  padding: 1.0rem;
+  margin: 1.5rem;
+  background-color: #0cbaba;
+  background-image: linear-gradient(180deg, #000000 0%, #02008D 100%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 4px solid  #00DFE6;
+  transition: 0.5s;
+  color: #ffffff;
+}
+.navsecbtn{
+  z-index: inherit;
+  border-radius: 11px;
+  background-color: #1e0f8f;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 3px solid  #00DFE6;
+  width: 12rem;
+  height: 4rem;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-family: 'Anonymous Pro', monospace;
+}
+.navsecbtn:hover{
+  scale: 1.2;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+.navsecbtn:active{
+  scale: 0.9;
+  opacity: 0.5;
+  transition: 0.1s;
+}
+.logoimg{
+  z-index: inherit;
+  height: 25px;
+}
+.logoimg:hover{
+  scale: 10;
+}
+.right{
+  z-index: inherit;
+  float: right;
+}
+
+
+
+/*
+.gradientwrap{
+  border-radius: 16px;
+  padding: 0rem;
+  position: relative;
+  background: linear-gradient(180deg, #ACBEFF 0%, #00DFE6 100%);
+}
+*/
+
+
+
+.fa-brands,.fa-solid, .fa-regular {
+  z-index: inherit;
+  scale: 2vw;
+  position:relative;
+}
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href=
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+
+<body>
+  <img class="cornerdecor" src="https://fortenox.wev.ovh/assets/cornerpart.png" />
+  <img class="socialdecor" src="https://fortenox.wev.ovh/assets/socialpart.png" />
+  <img class="gallery" src="https://fortenox.wev.ovh/assets/fortenox-gallery.png" />
+  <div class="topsec">
+    <img src="https://fortenox.wev.ovh/assets/fortenox-banner.png" width="25%" />
+    <br /><br /><br /><br />
+    <div class="socials">
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-soundcloud"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitch"></i>
+      <i class="fa-brands fa-spotify"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+    <br /><br /><br /><br />
+    <div class="topsectxt"><p>Fortenox’s journey began in 2017 when making music was just a hobby. Progressing further throughout the years, his skill strengthened as he began learning more about the music he was creating. During this time, he built up an incredible community of supporters.</p>
+    <p>Consider supporting him on his journey of becoming a popular producer, with a fantastic community.</p></div>
+  </div>
+  <img class="featureimg" src="https://fortenox.wev.ovh/assets/fortenox-about.png"/>
+  <div class="navsec">
+    <button class="navsecbtn">About</button>
+    <button class="navsecbtn">Releases</button>
+    <button class="navsecbtn">Concerts</button>
+    <img class="logoimg" src="https://fortenox.wev.ovh/assets/fortenox-logo.png" />
+    <button class="navsecbtn right">Contact</button>
+  </div>
+</body>
+
+</html>

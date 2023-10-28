@@ -111,7 +111,55 @@ next is just a push so that our request moves to the next thing which should be 
 That route whose some part is always same and some part always change
 
 //route parameters
+to make any route dynamic you can use : at the place where you want to make it dynamic, and to access there value use req.params
 
+/author/books/issued/harsh
+/author/books/issued/vivek
+
+/author/books/issued/:username
+
+
+//templates engines => this is style of markup which converts it into html
+Ex. of TE => pug, handlebars, ejs, jade
+pug & jade syntax looks like python
+ejs syntax looks like html
+
+//What is EJS?
+
+What is the "E" for? "Embedded?" Could be. How about "Effective," "Elegant," or just "Easy"? EJS is a simple templating language that lets you generate HTML markup with plain JavaScript. No religiousness about how to organize things. No reinvention of iteration and control-flow. It's just plain JavaScript. It is exact duplicate of html.
+
+
+html doesn't have superpowers to calculate the numbers
+if we write 1+1 in html it will give us 1+1 only
+ejs is advance version of html with superpowers which can do javascript inside html
+Just like in react we have jsx here we have ejs
+
+//setup of ejs
+
+->ejs install
+npm i ejs
+
+->configue ejs
+app.set('view engine', 'ejs);
+
+->make folder with the name of views
+
+->inside that make ejs files
+
+->instead of send put render => at the time of render make sure to use the file that is ejs file which is present inside views folder and inside render function don't mention ejs
+
+
+//static files
+To setup images, stylesheets, frontend js
+
+//Steps to setup static files
+-> create a folder called public
+
+-> create three folders inside it, images,stylesheets, javascripts
+
+-> configure the express static 
+
+-> understand the path
 
 
 
