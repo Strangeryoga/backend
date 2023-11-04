@@ -168,4 +168,112 @@ put error function inside
 app.use()
 
 
+// express generator
+we were wasting our time for settting up the express and creating the project structure. But with the help of express generator it is easy. It will make the folder structure for you and it will write the basic code for the project.
+It will give us the folder readymade just like our project (backend) that means we didn't have to create. All the files of express will be inside in this folder.
+
+// steps to use express generator
+first of all install it globally
+-> npm i express-generator -g
+
+// to create new app anywhere
+-> open cmd move to your destination
+-> create new app : 
+   express appname --view=ejs
+
+// now use two commands
+-> cd appname
+-> npm i
+-> open in vscode
+
+
+// changes happen 
+-> app.get -> router.get
+-> npx nodomon filename => npx nodemon
+
+
+//Database -> a place where the data of app get stored
+//Two types of DB 
+-> Relational DB (Mysql)
+-> Non-relational DB (MongoDB)
+
+// The data of the new app will be always stored in storage, but it will not be stored directly but it is placed inside a container. Inside that container, only the app data will be there
+
+![Alt text](image.png)
+
+// MongoDB
+-> dbs, models, schema, collections, documents
+
+// models (code) => collection (db)
+
+// schema (code) => documents (db)
+
+// The data of one app => db
+// Inside that app variety of data will be there but whole data is of app. But inside that data sub category will be there that is called collection.
+// collection means data of users, data of products, but only data of one user, one product is called document
+
+
+// install mongoosejs
+-> npm i mongoose
+
+// require and setup connection
+-> const mongoose = require("mongoose")
+-> mongoose.connect("mongodb://127.0.0.1:27017/db_name")
+
+// make schema
+-> const userschema = mongoose.Schema({
+    username: String,
+    name: String,
+    age: Number
+})
+
+// create model and export
+-> mongoose.model(model_name, schema);
+
+   client            server
+  (browser)         (nodejs)
+   cookies           session
+
+// If we want to store the data in frontend it will done with the help of cookies.
+// If we want to store the data on server side it will done with the help of session.
+
+// setup of sessions
+-> npm i express-session
+
+// Inside app.js create variable 
+-> var session = require("express-session");
+// Then we have to use that session
+// app.use(session({
+    resave: false,  // if the value of session is not     change then don't change the value
+
+    saveUninitialized: false, // if the data is unknown then don't save the data
+
+    secret: "yoyo"
+}));
+// Inside index.js file we can make any session and set any value for it and it will stored inside the server
+
+//create
+-> req.session.hello = "world"
+
+// read
+-> req.session.hello;
+
+// delete
+-> req.session.destroy()
+
+
+// setup of cookies
+It is already installed by express generator know as cookie-parser
+
+// create
+-> req.cookie("name", value)
+
+// read
+-> req.cookies.cookie_name
+
+// delete
+-> res.clearCookie("name")
+
+
+
 
