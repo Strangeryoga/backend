@@ -276,4 +276,8 @@ It is already installed by express generator know as cookie-parser
 
 
 
+// flash messages
+-> when you see some ejs page and in that if you want to give some info, that is called flash messages, they are more like good looking alerts, warning and descriptions
+
+
 
