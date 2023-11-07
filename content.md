@@ -279,5 +279,14 @@ It is already installed by express generator know as cookie-parser
 // flash messages
 -> when you see some ejs page and in that if you want to give some info, that is called flash messages, they are more like good looking alerts, warning and descriptions
 
+// setup of flash
+-> install connect-flash
+-> make sure to setup express-session
+-> make sure to put connect flash in a app.use fnc
+-> in any route you have to create flash
+-> in any other route you have to run app 
+
+** You can't use connect flash with express session
+
 
 
