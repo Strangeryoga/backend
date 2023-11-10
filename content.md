@@ -286,7 +286,8 @@ It is already installed by express generator know as cookie-parser
 -> in any route you have to create flash
 -> in any other route you have to run app 
 
-** You can't use connect flash with express session
+** You can't use connect flash without express session
 
+// flash message means you can send any data from one route to another route
 
 
