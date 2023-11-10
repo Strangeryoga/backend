@@ -291,3 +291,14 @@ It is already installed by express generator know as cookie-parser
 // flash message means you can send any data from one route to another route
 
 
+// Intermediate mongodb
+ 
+ //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/RegExp
+ 
+ 1. How can I perform a case-insensitive search in Mongoose?
+ -> Use new RegExp(pattern, flag)
+
+ Ex. var regex = new RegExp("^harsh$", 'i');
+ // in above ex. ^ represents that search starts from there and $ represents that it will end there
+
+
