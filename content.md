@@ -302,3 +302,8 @@ It is already installed by express generator know as cookie-parser
  // in above ex. ^ represents that search starts from there and $ represents that it will end there
 
 
+2. How do I find documents where an array field contains all of a set of values
+// we use $all for finding categories/anything which is present in all the documents
+
+3. How can I search for documents with a specific date range in Mongoose
+//  we use $gte: date1 and $lte: date2 to find specific range of documents
