@@ -307,3 +307,14 @@ It is already installed by express generator know as cookie-parser
 
 3. How can I search for documents with a specific date range in Mongoose
 //  we use $gte: date1 and $lte: date2 to find specific range of documents
+
+4. How can I filter documents based on the existence of a field in Mongoose
+// we use $exists: true for checking if the field is present or not
+
+5. How can I filter documents based on a specific field's length in Mongoose
+// we use $expr: {
+      $and: [
+        { $gte: [{$strLenCP: '$field_name'}, start_index]},
+        { $lte: [{$strLenCP: '$field_name'}, last_index]},
+      ]
+    }
