@@ -318,3 +318,12 @@ It is already installed by express generator know as cookie-parser
         { $lte: [{$strLenCP: '$field_name'}, last_index]},
       ]
     }
+
+
+// authentication and authorization
+
+. When we try to use any media app it requires login/sign up so basically it is the heart of the app it is also called strategy
+. There are of different types google strategy, facebook strategy and local strategy
+. LS it contains of username and password
+. for encryption and decryption of the password we use local moongoose
+
