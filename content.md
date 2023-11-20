@@ -327,3 +327,18 @@ It is already installed by express generator know as cookie-parser
 . LS it contains of username and password
 . for encryption and decryption of the password we use local moongoose
 
+
+// install this packages:
+  npm i passport passport-local passport-local-mongoose mongoose express-session
+
+/ Write app.js code first in app.js file and write it after view engine and before logger
+
+/ setup users.js then properly
+
+/ in index.js try register first and then other codes as well
+
+
+
+![Alt text](image-1.png)
+![Alt text](image-2.png)
+![Alt text](image-3.png)
