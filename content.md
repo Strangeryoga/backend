@@ -342,3 +342,10 @@ It is already installed by express generator know as cookie-parser
 ![Alt text](image-1.png)
 ![Alt text](image-2.png)
 ![Alt text](image-3.png)
+
+
+// data association
+// Linking data of two models with each other using id's
+// Ex. if the user make a post then how we can find that post? 
+// So for that we give user's id to post then we know that this post belong's to that user
+// But there is one way link from post to user but there is not from user to post so for that we give post id to the user
